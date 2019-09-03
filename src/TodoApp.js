@@ -6,7 +6,8 @@ import {
     StyleSheet
 } from "react-native";
 import AddTodo from './containers/AddTodo';
-import VisibleTodos from './containers/VisibleTodos'
+import VisibleTodos from './containers/VisibleTodos';
+import Footer from './containers/Footer'
 
 class TodoApp extends Component {
 
@@ -25,6 +26,9 @@ class TodoApp extends Component {
         <View>
           <VisibleTodos />
         </View>
+
+        <Footer />
+ 
       </View>
     );
   }

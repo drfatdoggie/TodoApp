@@ -2,7 +2,6 @@ import React from "react";
 import { 
   View,
   Text,
-  StyleSheet,
   TouchableOpacity
 } from "react-native";
 
@@ -10,7 +9,6 @@ const TodoList = ({ todos, toggleTodo }) => {
   return (
   <View style={{padding: 20}}>
     {todos.map(todo => {
-      console.log(todo.text)
       return (<TouchableOpacity key={todo.id} onPress={()=>toggleTodo(todo.id)}>
       <Text style={{fontSize:24, textDecorationLine: todo.completed ? 'line-through' : 'none'
       }}>{todo.text}</Text>
@@ -19,4 +17,5 @@ const TodoList = ({ todos, toggleTodo }) => {
     )}
   </View>
 )}
+
 export default TodoList;
